@@ -49,6 +49,12 @@ class ModelController extends Controller
 
     public function store(ModelRequest $request)
     {
+        // if request has image, store it and get the path
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('models', 'public');
+            $request->merge(['image' => asset('storage/' . $path)]);
+        }
+
         $model = CarModel::create($request->validated());
 
         return response()->json([

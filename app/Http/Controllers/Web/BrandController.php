@@ -37,7 +37,8 @@ class BrandController extends Controller
         $data = $request->validated();
 
         if ($request->hasFile('logo')) {
-            $data['logo'] = $request->file('logo')->store('brands', 'public');
+            $path = $request->file('logo')->store('brands', 'public');
+            $data['logo'] = asset('storage/' . $path);
         }
 
         Brand::create($data);

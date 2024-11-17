@@ -65,6 +65,8 @@ Available Routes
 Brand Directory: http://localhost:8000/
 Manage Brands: http://localhost:8000/brands
 Manage Models: http://localhost:8000/models
+
+
 Features
 Brand Directory with Search and Filter
 Brand Management (Add/Edit/Delete)

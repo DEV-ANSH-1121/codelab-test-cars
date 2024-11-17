@@ -55,7 +55,8 @@ class ModelController extends Controller
         $data = $request->validated();
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('models', 'public');
+            $path = $request->file('image')->store('models', 'public');
+            $data['image'] = asset('storage/' . $path);
         }
 
         CarModel::create($data);
