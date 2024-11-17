@@ -1,0 +1,89 @@
+/* Table Sorting Styles */
+.sortable::after {
+    content: '\f0dc';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 5px;
+    color: #ccc;
+}
+
+.sortable.asc::after {
+    content: '\f0de';
+    color: #000;
+}
+
+.sortable.desc::after {
+    content: '\f0dd';
+    color: #000;
+}
+
+/* Table Styles */
+.table-responsive {
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Form Element Styles */
+.form-select,
+.form-control {
+    border-radius: 4px;
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-bottom: 0;
+}
+
+/* Image Styles */
+.brand-logo {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.model-image {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter Section */
+.filter-section {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Brand Letter Index */
+.brand-letter-index {
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.letter-section {
+    margin-bottom: 2rem;
+}
+
+.letter-heading {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
